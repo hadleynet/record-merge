@@ -4,10 +4,7 @@ class SortTest < Test::Unit::TestCase
 
   def setup
     @fixtures_dir = File.expand_path("../../fixtures", __FILE__)
-    Dir.glob(File.join(@fixtures_dir, 'tmp', '*')) do |file|
-      puts "Removing: #{file}"
-      FileUtils.rm_r(file)
-    end
+    teardown #get rid of anything left behind by last test run just in case
     @sorter = RecordMerge::Sorter.new(File.join(@fixtures_dir, 'tmp'))
   end
   
@@ -21,6 +18,8 @@ class SortTest < Test::Unit::TestCase
   def test_dir_creation
     @sorter.sort(File.join(@fixtures_dir, 'NISTExampleC32.xml'))  
     assert File.exists?(File.join(@fixtures_dir, 'tmp', 'PatientID'))
+    assert File.exists?(File.join(@fixtures_dir, 'tmp', 'PatientID', 'NISTExampleC32.xml'))
+    assert File.symlink?(File.join(@fixtures_dir, 'tmp', 'PatientID', 'NISTExampleC32.xml'))
   end
 
 end
