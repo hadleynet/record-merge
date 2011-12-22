@@ -10,16 +10,20 @@ class SortTest < Test::Unit::TestCase
   
   def teardown
     Dir.glob(File.join(@fixtures_dir, 'tmp', '*')) do |file|
-      puts "Removing: #{file}"
       FileUtils.rm_r(file)
     end
   end
   
   def test_dir_creation
+    assert !File.exists?(File.join(@fixtures_dir, 'tmp', 'PatientID'))
     @sorter.sort(File.join(@fixtures_dir, 'NISTExampleC32.xml'))  
     assert File.exists?(File.join(@fixtures_dir, 'tmp', 'PatientID'))
-    assert File.exists?(File.join(@fixtures_dir, 'tmp', 'PatientID', 'PatientID-20091110-080945-EST.xml'))
-    assert File.symlink?(File.join(@fixtures_dir, 'tmp', 'PatientID', 'PatientID-20091110-080945-EST.xml'))
+    file = File.join(@fixtures_dir, 'tmp', 'PatientID', 'PatientID-20091110-080945-EST.json')
+    assert File.exists?(file)
+    patient_hash = JSON.parse(File.read(file))
+    assert_equal 'PatientID', patient_hash['medical_record_number']
+    record = Record.new(patient_hash)
+    assert_equal 'PatientID', record.medical_record_number
   end
 
 end
