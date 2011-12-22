@@ -18,8 +18,8 @@ class SortTest < Test::Unit::TestCase
   def test_dir_creation
     @sorter.sort(File.join(@fixtures_dir, 'NISTExampleC32.xml'))  
     assert File.exists?(File.join(@fixtures_dir, 'tmp', 'PatientID'))
-    assert File.exists?(File.join(@fixtures_dir, 'tmp', 'PatientID', 'NISTExampleC32.xml'))
-    assert File.symlink?(File.join(@fixtures_dir, 'tmp', 'PatientID', 'NISTExampleC32.xml'))
+    assert File.exists?(File.join(@fixtures_dir, 'tmp', 'PatientID', 'PatientID-20091110-080945-EST.xml'))
+    assert File.symlink?(File.join(@fixtures_dir, 'tmp', 'PatientID', 'PatientID-20091110-080945-EST.xml'))
   end
 
 end

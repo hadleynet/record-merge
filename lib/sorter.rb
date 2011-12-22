@@ -11,7 +11,8 @@ module RecordMerge
       doc.root.add_namespace_definition('cda', 'urn:hl7-org:v3')
       patient = HealthDataStandards::Import::C32::PatientImporter.instance.parse_c32(doc)
       dir = patient_dir(patient)
-      new_file = File.join(dir, File.basename(file))
+      effective_time = Time.at(patient.effective_time).strftime('%Y%m%d-%H%M%S-%Z')
+      new_file = File.join(dir, "#{patient.medical_record_number}-#{effective_time}#{File.extname(file)}")
       File.symlink(file, new_file)
     end
     
