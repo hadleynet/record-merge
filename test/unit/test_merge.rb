@@ -15,5 +15,11 @@ class MergeTest < Test::Unit::TestCase
     assert_equal 'a-1021-EST.json', File.basename(files[2])
     assert_equal 'a-2000-EST.json', File.basename(files[3])
   end
+  
+  def test_merging
+    merged = @merger.merge_all
+    assert_equal 3, merged.allergies.size
+    assert_equal 5, merged.conditions.size
+  end
 
 end

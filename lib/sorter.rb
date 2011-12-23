@@ -11,7 +11,7 @@ module RecordMerge
       doc.root.add_namespace_definition('cda', 'urn:hl7-org:v3')
       patient = HealthDataStandards::Import::C32::PatientImporter.instance.parse_c32(doc)
       File.open(filename(patient),'w') do |file|
-        file.write(patient.to_json)
+        file.write(patient.as_document.to_json)
       end
     end
     

@@ -1,0 +1,789 @@
+{
+    "_id": "4ef4a6ab98abb16946000001",
+    "effective_time": 1257858585,
+    "first": "FirstName",
+    "last": "LastName",
+    "birthdate": 457747200,
+    "gender": "F",
+    "medical_record_number": "PatientID",
+    "allergies": [
+        {
+            "_id": "4ef4a6ab98abb16946000027",
+            "_type": "Allergy",
+            "codes": {
+                "RxNorm": [
+                    "70618"
+                ]
+            },
+            "value": {},
+            "description": null,
+            "reaction": {
+                "code": "247472004",
+                "codeSystemOid": "2.16.840.1.113883.6.96",
+                "codeSystem": "SNOMED-CT"
+            },
+            "severity": null
+        },
+        {
+            "_id": "4ef4a6ab98abb16946000028",
+            "_type": "Allergy",
+            "codes": {
+                "RxNorm": [
+                    "1191"
+                ]
+            },
+            "value": {},
+            "time": null,
+            "start_time": null,
+            "description": null,
+            "reaction": null,
+            "severity": null
+        },
+        {
+            "_id": "4ef4a6ab98abb16946000029",
+            "_type": "Allergy",
+            "codes": {
+                "RxNorm": [
+                    "2670"
+                ]
+            },
+            "value": {},
+            "time": null,
+            "start_time": 1133395200,
+            "end_time": 1136073600,
+            "description": null,
+            "reaction": {
+                "code": "73879007",
+                "codeSystemOid": "2.16.840.1.113883.6.96",
+                "codeSystem": "SNOMED-CT"
+            },
+            "severity": {
+                "code": "6736007",
+                "codeSystemOid": "2.16.840.1.113883.6.96",
+                "codeSystem": "SNOMED-CT"
+            }
+        }
+    ],
+    "care_goals": [
+        {
+            "_id": "4ef4a6ab98abb16946000023",
+            "_type": "Entry",
+            "codes": {
+                "SNOMED-CT": [
+                    "23426006"
+                ]
+            },
+            "value": {},
+            "time": 956275200
+        }
+    ],
+    "conditions": [
+        {
+            "_id": "4ef4a6ab98abb1694600001a",
+            "_type": "Entry",
+            "codes": {
+                "SNOMED-CT": [
+                    "195967001"
+                ]
+            },
+            "value": {},
+            "time": null,
+            "start_time": -631152000,
+            "description": "\n\t\t\t\t\t\t\t\t\tAsthma\n\t\t\t\t\t\t\t\t\t1950\n\t\t\t\t\t\t\t\t\tActive\n\t\t\t\t\t\t\t\t"
+        }
+    ],
+    "encounters": [
+        {
+            "_id": "4ef4a6ab98abb16946000002",
+            "_type": "Encounter",
+            "codes": {
+                "CPT": [
+                    "99241"
+                ],
+                "Unknown": [
+                    "AMB"
+                ]
+            },
+            "value": {},
+            "time": 955065600,
+            "description": null,
+            "performer": {
+                "person": {
+                    "name": "Performer Name",
+                    "first": null,
+                    "last": null,
+                    "addresses": [
+                        {
+                            "streetAddress": [
+                                null
+                            ],
+                            "city": null,
+                            "stateOrProvince": null,
+                            "zip": null,
+                            "country": null
+                        }
+                    ],
+                    "telecoms": [
+                        {
+                            "value": null,
+                            "use": null
+                        }
+                    ]
+                }
+            },
+            "facility": {
+                "organizationName": "Good Health Clinic",
+                "addresses": [
+                    {
+                        "streetAddress": [
+                            null
+                        ],
+                        "city": null,
+                        "stateOrProvince": null,
+                        "zip": null,
+                        "country": null
+                    }
+                ],
+                "telcoms": [
+                    {
+                        "value": null,
+                        "use": null
+                    }
+                ]
+            },
+            "admitType": null
+        }
+    ],
+    "immunizations": [
+        {
+            "_id": "4ef4a6ab98abb1694600002a",
+            "_type": "Immunization",
+            "codes": {
+                "CVX": [
+                    "88",
+                    "111"
+                ]
+            },
+            "value": {},
+            "time": 941414400
+        },
+        {
+            "_id": "4ef4a6ab98abb1694600002b",
+            "_type": "Immunization",
+            "codes": {
+                "CVX": [
+                    "88",
+                    "111"
+                ]
+            },
+            "value": {},
+            "time": 913680000,
+            "refusalInd": false,
+            "performer": {}
+        },
+        {
+            "_id": "4ef4a6ab98abb1694600002c",
+            "_type": "Immunization",
+            "codes": {
+                "CVX": [
+                    "33",
+                    "109"
+                ]
+            },
+            "value": {},
+            "time": 913680000,
+            "description": null,
+            "refusalInd": false
+        },
+        {
+            "_id": "4ef4a6ab98abb1694600002d",
+            "_type": "Immunization",
+            "codes": {
+                "CVX": [
+                    "09",
+                    "113"
+                ]
+            },
+            "value": {},
+            "time": 871603200,
+            "refusalInd": true,
+            "refusalReason": {
+                "code": "PATOBJ",
+                "codeSystem": "HL7 No Immunization Reason"
+            },
+            "performer": {}
+        }
+    ],
+    "medical_equipment": [
+        {
+            "_id": "4ef4a6ab98abb16946000024",
+            "_type": "Entry",
+            "codes": {
+                "SNOMED-CT": [
+                    "72506001"
+                ]
+            },
+            "value": {},
+            "time": 941414400
+        },
+        {
+            "_id": "4ef4a6ab98abb16946000025",
+            "_type": "Entry",
+            "codes": {
+                "SNOMED-CT": [
+                    "304120007"
+                ]
+            },
+            "value": {},
+            "time": 883612800
+        },
+        {
+            "_id": "4ef4a6ab98abb16946000026",
+            "_type": "Entry",
+            "codes": {
+                "SNOMED-CT": [
+                    "58938008"
+                ]
+            },
+            "value": {},
+            "time": 915148800
+        }
+    ],
+    "medications": [
+        {
+            "_id": "4ef4a6ab98abb16946000011",
+            "_type": "Medication",
+            "codes": {
+                "RxNorm": [
+                    "307782"
+                ]
+            },
+            "value": {},
+            "time": null,
+            "start_time": 1104537600,
+            "end_time": null,
+            "administrationTiming": {
+                "period": {
+                    "unit": "h",
+                    "value": 6
+                }
+            },
+            "route": {
+                "code": "IPINHL",
+                "codeSystemOid": "2.16.840.1.113883.5.112",
+                "codeSystem": "Unknown"
+            },
+            "dose": {
+                "unit": null,
+                "value": 2
+            },
+            "site": null,
+            "productForm": {
+                "code": "415215001",
+                "codeSystem": "NCI Thesaurus"
+            },
+            "deliveryMethod": null,
+            "typeOfMedication": null,
+            "indication": null,
+            "vehicle": null
+        },
+        {
+            "_id": "4ef4a6ab98abb16946000014",
+            "_type": "Medication",
+            "codes": {
+                "RxNorm": [
+                    "430618"
+                ]
+            },
+            "value": {},
+            "time": null,
+            "start_time": 1195603200,
+            "end_time": null,
+            "description": null,
+            "administrationTiming": {
+                "institutionSpecified": false,
+                "period": {
+                    "unit": "h",
+                    "value": 12
+                }
+            },
+            "route": {
+                "code": "C38288",
+                "codeSystemOid": "2.16.840.1.113883.3.26.1.1",
+                "codeSystem": "Unknown"
+            },
+            "dose": {
+                "unit": null,
+                "value": 1
+            },
+            "site": null,
+            "productForm": null,
+            "deliveryMethod": null,
+            "typeOfMedication": {
+                "code": "73639000",
+                "codeSystem": "SNOMED-CT"
+            },
+            "indication": null,
+            "vehicle": null,
+            "orderInformation": [
+                {
+                    "_id": "4ef4a6ab98abb16946000015",
+                    "orderNumber": null,
+                    "fills": 1,
+                    "quantityOrdered": {
+                        "unit": "mg",
+                        "value": 5
+                    }
+                }
+            ]
+        },
+        {
+            "_id": "4ef4a6ab98abb16946000016",
+            "_type": "Medication",
+            "codes": {
+                "RxNorm": [
+                    "312615",
+                    "227730"
+                ]
+            },
+            "value": {},
+            "time": null,
+            "start_time": 954201600,
+            "end_time": null,
+            "administrationTiming": {
+                "institutionSpecified": false,
+                "period": {
+                    "unit": "h",
+                    "value": 24
+                }
+            },
+            "route": {
+                "code": "C38288",
+                "codeSystemOid": "2.16.840.1.113883.3.26.1.1",
+                "codeSystem": "Unknown"
+            },
+            "dose": {
+                "unit": null,
+                "value": 1
+            },
+            "site": null,
+            "productForm": null,
+            "deliveryMethod": null,
+            "typeOfMedication": {
+                "code": "329505003",
+                "codeSystem": "SNOMED-CT"
+            },
+            "indication": null,
+            "vehicle": null,
+            "orderInformation": [
+                {
+                    "_id": "4ef4a6ab98abb16946000017",
+                    "orderNumber": null,
+                    "fills": 1,
+                    "quantityOrdered": {
+                        "unit": "tablet",
+                        "value": 1
+                    }
+                }
+            ]
+        },
+        {
+            "_id": "4ef4a6ab98abb16946000018",
+            "_type": "Medication",
+            "codes": {
+                "RxNorm": [
+                    "197454",
+                    "203167"
+                ]
+            },
+            "value": {},
+            "time": null,
+            "start_time": 954201600,
+            "end_time": 954806400,
+            "administrationTiming": {
+                "institutionSpecified": false,
+                "period": {
+                    "unit": "h",
+                    "value": 6
+                }
+            },
+            "route": {
+                "code": "C38288",
+                "codeSystemOid": "2.16.840.1.113883.3.26.1.1",
+                "codeSystem": "Unknown"
+            },
+            "dose": {
+                "unit": null,
+                "value": 1
+            },
+            "site": null,
+            "productForm": null,
+            "deliveryMethod": null,
+            "typeOfMedication": {
+                "code": "73639000",
+                "codeSystem": "SNOMED-CT"
+            },
+            "indication": {
+                "code": "VA/KPproblemList",
+                "codeSystem": "SNOMED-CT"
+            },
+            "vehicle": null,
+            "orderInformation": [
+                {
+                    "_id": "4ef4a6ab98abb16946000019",
+                    "orderNumber": null,
+                    "fills": 1,
+                    "quantityOrdered": {
+                        "unit": "tablet",
+                        "value": 1
+                    }
+                }
+            ]
+        }
+    ],
+    "procedures": [
+        {
+            "_id": "4ef4a6ab98abb16946000003",
+            "_type": "Procedure",
+            "codes": {
+                "SNOMED-CT": [
+                    "52734007"
+                ]
+            },
+            "value": {},
+            "time": 883612800,
+            "description": "Total hip replacement, left",
+            "performer": {
+                "person": {
+                    "name": "",
+                    "first": null,
+                    "last": null,
+                    "addresses": [
+                        {
+                            "streetAddress": [
+                                null
+                            ],
+                            "city": null,
+                            "stateOrProvince": null,
+                            "zip": null,
+                            "country": null
+                        }
+                    ],
+                    "telecoms": [
+                        {
+                            "value": null,
+                            "use": null
+                        }
+                    ]
+                }
+            },
+            "site": null
+        },
+        {
+            "_id": "4ef4a6ab98abb16946000004",
+            "_type": "Procedure",
+            "codes": {
+                "SNOMED-CT": [
+                    "43789009"
+                ]
+            },
+            "value": {},
+            "time": 953821800,
+            "description": null,
+            "performer": {},
+            "site": null
+        },
+        {
+            "_id": "4ef4a6ab98abb16946000005",
+            "_type": "Procedure",
+            "codes": {
+                "SNOMED-CT": [
+                    "20109005"
+                ]
+            },
+            "value": {},
+            "time": 955026000,
+            "description": null,
+            "performer": {},
+            "site": null
+        }
+    ],
+    "results": [
+        {
+            "_id": "4ef4a6ab98abb16946000006",
+            "_type": "LabResult",
+            "codes": {
+                "LOINC": [
+                    "30313-1"
+                ]
+            },
+            "value": {
+                "scalar": "13.2",
+                "units": "g/dl"
+            },
+            "time": 953821800,
+            "status": "completed",
+            "description": null,
+            "interpretation": {
+                "code": "N",
+                "codeSystem": "HITSP C80 Observation Status"
+            }
+        },
+        {
+            "_id": "4ef4a6ab98abb16946000007",
+            "_type": "LabResult",
+            "codes": {
+                "LOINC": [
+                    "33765-9"
+                ]
+            },
+            "value": {
+                "scalar": "6.7",
+                "units": "10+3/ul"
+            },
+            "time": 953821800,
+            "status": "completed",
+            "description": null,
+            "interpretation": {
+                "code": "N",
+                "codeSystem": "HITSP C80 Observation Status"
+            }
+        },
+        {
+            "_id": "4ef4a6ab98abb16946000008",
+            "_type": "LabResult",
+            "codes": {
+                "LOINC": [
+                    "2951-2"
+                ]
+            },
+            "value": {
+                "scalar": "140",
+                "units": "meq/l"
+            },
+            "time": 955026000,
+            "status": "completed",
+            "description": null,
+            "interpretation": {
+                "code": "N",
+                "codeSystem": "HITSP C80 Observation Status"
+            }
+        },
+        {
+            "_id": "4ef4a6ab98abb16946000009",
+            "_type": "LabResult",
+            "codes": {
+                "LOINC": [
+                    "2823-3"
+                ]
+            },
+            "value": {
+                "scalar": "4.0",
+                "units": "meq/l"
+            },
+            "time": 955026000,
+            "status": "completed",
+            "description": null,
+            "interpretation": {
+                "code": "N",
+                "codeSystem": "HITSP C80 Observation Status"
+            }
+        },
+        {
+            "_id": "4ef4a6ab98abb1694600000a",
+            "_type": "LabResult",
+            "codes": {
+                "LOINC": [
+                    "2075-0"
+                ]
+            },
+            "value": {
+                "scalar": "102",
+                "units": "meq/l"
+            },
+            "time": 955026000,
+            "status": "completed",
+            "description": null,
+            "interpretation": {
+                "code": "N",
+                "codeSystem": "HITSP C80 Observation Status"
+            }
+        },
+        {
+            "_id": "4ef4a6ab98abb1694600000b",
+            "_type": "LabResult",
+            "codes": {
+                "LOINC": [
+                    "1963-8"
+                ]
+            },
+            "value": {
+                "scalar": "35",
+                "units": "meq/l"
+            },
+            "time": 955026000,
+            "status": "completed",
+            "description": null,
+            "interpretation": {
+                "code": "H",
+                "codeSystem": "HITSP C80 Observation Status"
+            }
+        }
+    ],
+    "social_history": [
+        {
+            "_id": "4ef4a6ab98abb16946000020",
+            "_type": "Entry",
+            "codes": {
+                "SNOMED-CT": [
+                    "230056004"
+                ]
+            },
+            "value": {},
+            "time": null,
+            "start_time": -725846400,
+            "end_time": 63072000
+        },
+        {
+            "_id": "4ef4a6ab98abb16946000021",
+            "_type": "Entry",
+            "codes": {
+                "SNOMED-CT": [
+                    "230056004"
+                ]
+            },
+            "value": {},
+            "time": null,
+            "start_time": 94694400
+        },
+        {
+            "_id": "4ef4a6ab98abb16946000022",
+            "_type": "Entry",
+            "codes": {
+                "SNOMED-CT": [
+                    "160573003"
+                ]
+            },
+            "value": {},
+            "time": null,
+            "start_time": 94694400
+        }
+    ],
+    "vital_signs": [
+        {
+            "_id": "4ef4a6ab98abb1694600000c",
+            "_type": "LabResult",
+            "codes": {
+                "LOINC": [
+                    "8302-2"
+                ],
+                "SNOMED-CT": [
+                    "50373000"
+                ]
+            },
+            "value": {
+                "scalar": "177",
+                "units": "cm"
+            },
+            "time": 942537600,
+            "status": "completed",
+            "description": null,
+            "interpretation": {
+                "code": null,
+                "codeSystem": "Unknown"
+            }
+        },
+        {
+            "_id": "4ef4a6ab98abb1694600000d",
+            "_type": "LabResult",
+            "codes": {
+                "LOINC": [
+                    "8480-6"
+                ],
+                "SNOMED-CT": [
+                    "271649006"
+                ]
+            },
+            "value": {
+                "scalar": "132",
+                "units": "mm[Hg]"
+            },
+            "time": 942537600,
+            "status": "completed",
+            "description": null,
+            "interpretation": {
+                "code": null,
+                "codeSystem": "Unknown"
+            }
+        },
+        {
+            "_id": "4ef4a6ab98abb1694600000e",
+            "_type": "LabResult",
+            "codes": {
+                "LOINC": [
+                    "8302-2"
+                ],
+                "SNOMED-CT": [
+                    "50373000"
+                ]
+            },
+            "value": {
+                "scalar": "177",
+                "units": "cm"
+            },
+            "time": 955065600,
+            "status": "completed",
+            "description": null,
+            "interpretation": {
+                "code": null,
+                "codeSystem": "Unknown"
+            }
+        },
+        {
+            "_id": "4ef4a6ab98abb1694600000f",
+            "_type": "LabResult",
+            "codes": {
+                "LOINC": [
+                    "3141-9"
+                ],
+                "SNOMED-CT": [
+                    "27113001"
+                ]
+            },
+            "value": {
+                "scalar": "88",
+                "units": "kg"
+            },
+            "time": 955065600,
+            "status": "completed",
+            "description": null,
+            "interpretation": {
+                "code": null,
+                "codeSystem": "Unknown"
+            }
+        },
+        {
+            "_id": "4ef4a6ab98abb16946000010",
+            "_type": "LabResult",
+            "codes": {
+                "LOINC": [
+                    "8480-6"
+                ],
+                "SNOMED-CT": [
+                    "271649006"
+                ]
+            },
+            "value": {
+                "scalar": "145",
+                "units": "mm[Hg]"
+            },
+            "time": 955065600,
+            "status": "completed",
+            "description": null,
+            "interpretation": {
+                "code": null,
+                "codeSystem": "Unknown"
+            }
+        }
+    ]
+}
