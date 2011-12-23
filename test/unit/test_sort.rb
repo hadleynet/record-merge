@@ -5,7 +5,11 @@ class SortTest < Test::Unit::TestCase
   def setup
     @fixtures_dir = File.expand_path("../../fixtures", __FILE__)
     teardown #get rid of anything left behind by last test run just in case
-    @sorter = RecordMerge::Sorter.new(File.join(@fixtures_dir, 'tmp'))
+    tmp_dir = File.join(@fixtures_dir, 'tmp')
+    if (!File.exists?(tmp_dir))
+      Dir.mkdir(tmp_dir)
+    end
+    @sorter = RecordMerge::Sorter.new(tmp_dir)
   end
   
   def teardown
