@@ -7,3 +7,4 @@ require 'health-data-standards'
 
 require_relative 'sorter'
 require_relative 'merger'
+require_relative 'processor'

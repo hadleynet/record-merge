@@ -1,5 +1,6 @@
 module RecordMerge
   class Merger
+  
     def initialize(src_dir)
       @src_dir = src_dir
     end
